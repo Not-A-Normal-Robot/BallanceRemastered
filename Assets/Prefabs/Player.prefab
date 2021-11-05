@@ -1,0 +1,358 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5803513524771508519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5803513524771508507}
+  - component: {fileID: 5803513524771508504}
+  - component: {fileID: 5803513524771508505}
+  - component: {fileID: 5803513524771508518}
+  - component: {fileID: 5803513524771508506}
+  - component: {fileID: 5803513524771508509}
+  - component: {fileID: 1053762370268928775}
+  - component: {fileID: 6472811995346777753}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5803513524771508507
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5803513524771508519}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 11, z: -20}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &5803513524771508504
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5803513524771508519}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &5803513524771508505
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5803513524771508519}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: e76b72df40922354dbb49d1873cf6125, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &5803513524771508518
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5803513524771508519}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &5803513524771508506
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5803513524771508519}
+  serializedVersion: 2
+  m_Mass: 0.75
+  m_Drag: 1
+  m_AngularDrag: 0.5
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &5803513524771508509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5803513524771508519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b72f8e60b27058b419f0966ff3df279f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  renderer: {fileID: 0}
+  audio: {fileID: 0}
+  movementSpeed: 1
+  paralyzed: 0
+  rigidbody: {fileID: 5803513524771508506}
+  upForce: 0
+  downForce: 0
+  leftForce: 0
+  rightForce: 0
+  _type: {fileID: 0}
+  type: 2
+  types:
+  - {fileID: 11400000, guid: 489b990b1098ca24092bf34a8d83b9f2, type: 2}
+  - {fileID: 11400000, guid: 899627a2163564e4d940ccdff37c9621, type: 2}
+  - {fileID: 11400000, guid: 06af9afb3a3ec034ebf5be423c59ccb1, type: 2}
+  respawnPos: {x: 0, y: 0, z: 0}
+--- !u!114 &1053762370268928775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5803513524771508519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a697ef64a4fe2443adc36a98f79b432, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  sounds:
+  - name: Hit_Paper_Dome
+    id: 0
+    audioClip: {fileID: 8300000, guid: 51baa67017aa9b044bd38afdec46f9c6, type: 3}
+    volume: 1
+    pitch: 1
+    looped: 0
+    source: {fileID: 0}
+  - name: Hit_Paper_Metal
+    id: 0
+    audioClip: {fileID: 8300000, guid: 51baa67017aa9b044bd38afdec46f9c6, type: 3}
+    volume: 1
+    pitch: 1
+    looped: 0
+    source: {fileID: 0}
+  - name: Hit_Paper_Stone
+    id: 0
+    audioClip: {fileID: 8300000, guid: 51baa67017aa9b044bd38afdec46f9c6, type: 3}
+    volume: 1
+    pitch: 1
+    looped: 0
+    source: {fileID: 0}
+  - name: Hit_Paper_Wood
+    id: 0
+    audioClip: {fileID: 8300000, guid: 51baa67017aa9b044bd38afdec46f9c6, type: 3}
+    volume: 1
+    pitch: 1
+    looped: 0
+    source: {fileID: 0}
+  - name: Hit_Paper_WoodFlap
+    id: 0
+    audioClip: {fileID: 8300000, guid: 51baa67017aa9b044bd38afdec46f9c6, type: 3}
+    volume: 1
+    pitch: 1
+    looped: 0
+    source: {fileID: 0}
+  - name: Hit_Paper_Paper
+    id: 0
+    audioClip: {fileID: 8300000, guid: 51baa67017aa9b044bd38afdec46f9c6, type: 3}
+    volume: 1
+    pitch: 1
+    looped: 0
+    source: {fileID: 0}
+  - name: Hit_Stone_Dome
+    id: 0
+    audioClip: {fileID: 8300000, guid: 9ae90e993c15d8e48a777de95c2c1d94, type: 3}
+    volume: 1
+    pitch: 1
+    looped: 0
+    source: {fileID: 0}
+  - name: Hit_Stone_Metal
+    id: 0
+    audioClip: {fileID: 8300000, guid: 3149f8d532c2de847be99217b157fc8f, type: 3}
+    volume: 1
+    pitch: 1
+    looped: 0
+    source: {fileID: 0}
+  - name: Hit_Stone_Stone
+    id: 0
+    audioClip: {fileID: 8300000, guid: c329c29906eec7944828ccc559967d56, type: 3}
+    volume: 1
+    pitch: 1
+    looped: 0
+    source: {fileID: 0}
+  - name: Hit_Stone_Wood
+    id: 0
+    audioClip: {fileID: 8300000, guid: ffe0f7ae975c4a943a937f75996578ed, type: 3}
+    volume: 1
+    pitch: 1
+    looped: 0
+    source: {fileID: 0}
+  - name: Hit_Stone_WoodFlap
+    id: 0
+    audioClip: {fileID: 8300000, guid: aa8bde264defb5940961f12dcecac909, type: 3}
+    volume: 1
+    pitch: 1
+    looped: 0
+    source: {fileID: 0}
+  - name: Hit_Stone_Paper
+    id: 0
+    audioClip: {fileID: 8300000, guid: 51baa67017aa9b044bd38afdec46f9c6, type: 3}
+    volume: 1
+    pitch: 1
+    looped: 0
+    source: {fileID: 0}
+  - name: Hit_Wood_Dome
+    id: 0
+    audioClip: {fileID: 8300000, guid: 2e3835c92a491a1429d83a22ac568387, type: 3}
+    volume: 1
+    pitch: 1
+    looped: 0
+    source: {fileID: 0}
+  - name: Hit_Wood_Metal
+    id: 0
+    audioClip: {fileID: 8300000, guid: 376093c1e60005843a094d4492768811, type: 3}
+    volume: 1
+    pitch: 1
+    looped: 0
+    source: {fileID: 0}
+  - name: Hit_Wood_Stone
+    id: 0
+    audioClip: {fileID: 8300000, guid: 7f9b6a1f989ef7248a79155ddf9392b2, type: 3}
+    volume: 1
+    pitch: 1
+    looped: 0
+    source: {fileID: 0}
+  - name: Hit_Wood_Wood
+    id: 0
+    audioClip: {fileID: 8300000, guid: 2136e3a9b4aa8254ba9a3b68cca7e09b, type: 3}
+    volume: 1
+    pitch: 1
+    looped: 0
+    source: {fileID: 0}
+  - name: Hit_Wood_WoodFlap
+    id: 0
+    audioClip: {fileID: 8300000, guid: 69e84c1f1e8e3cc40ad347cf6988d9b2, type: 3}
+    volume: 1
+    pitch: 1
+    looped: 0
+    source: {fileID: 0}
+  - name: Hit_Wood_Paper
+    id: 0
+    audioClip: {fileID: 8300000, guid: 51baa67017aa9b044bd38afdec46f9c6, type: 3}
+    volume: 1
+    pitch: 1
+    looped: 0
+    source: {fileID: 0}
+  - name: Roll_Paper_Wood
+    id: 0
+    audioClip: {fileID: 8300000, guid: 0dafe299fc32c1140841d68ad4553fa3, type: 3}
+    volume: 1
+    pitch: 1
+    looped: 1
+    source: {fileID: 0}
+  - name: Roll_Paper_Stone
+    id: 0
+    audioClip: {fileID: 8300000, guid: 0dafe299fc32c1140841d68ad4553fa3, type: 3}
+    volume: 1
+    pitch: 1
+    looped: 1
+    source: {fileID: 0}
+  - name: Roll_Paper_Metal
+    id: 0
+    audioClip: {fileID: 8300000, guid: 0dafe299fc32c1140841d68ad4553fa3, type: 3}
+    volume: 1
+    pitch: 1
+    looped: 1
+    source: {fileID: 0}
+  - name: Roll_Stone_Wood
+    id: 0
+    audioClip: {fileID: 8300000, guid: a4a16913915b66d48bfaafb3edd5847e, type: 3}
+    volume: 1
+    pitch: 1
+    looped: 1
+    source: {fileID: 0}
+  - name: Roll_Stone_Stone
+    id: 0
+    audioClip: {fileID: 8300000, guid: a517c600b38f8b64783242f9c1535960, type: 3}
+    volume: 1
+    pitch: 1
+    looped: 1
+    source: {fileID: 0}
+  - name: Roll_Stone_Metal
+    id: 0
+    audioClip: {fileID: 8300000, guid: 4d5e2d3418c682343b564c1e3e95a1be, type: 3}
+    volume: 1
+    pitch: 1
+    looped: 1
+    source: {fileID: 0}
+  - name: Roll_Wood_Wood
+    id: 0
+    audioClip: {fileID: 8300000, guid: f1ba769fe7b95b74ab1b54b98c1e6513, type: 3}
+    volume: 1
+    pitch: 1
+    looped: 1
+    source: {fileID: 0}
+  - name: Roll_Wood_Stone
+    id: 0
+    audioClip: {fileID: 8300000, guid: 54f8595b8fa4ded4c852bad61f9667fa, type: 3}
+    volume: 1
+    pitch: 1
+    looped: 1
+    source: {fileID: 0}
+  - name: Roll_Wood_Metal
+    id: 0
+    audioClip: {fileID: 8300000, guid: 94ef9e2a9eae67248950020fddf0a2d2, type: 3}
+    volume: 1
+    pitch: 1
+    looped: 1
+    source: {fileID: 0}
+  b: 000000
+--- !u!81 &6472811995346777753
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5803513524771508519}
+  m_Enabled: 1
